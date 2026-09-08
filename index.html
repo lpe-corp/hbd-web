@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Gift</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="min-h-screen overflow-hidden bg-[#0b1020] text-white antialiased">
+    <audio id="birthdaySong" src="assets/song.mp3" preload="auto" hidden></audio>
+
+    <main class="relative flex min-h-screen items-center justify-center px-4">
+      <button
+        id="giftButton"
+        type="button"
+        class="gift-button relative inline-flex items-center justify-center rounded-full border border-pink-300/60 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 px-8 py-5 text-xl font-bold tracking-wide text-white shadow-[0_0_35px_rgba(236,72,153,0.7)] transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_0_50px_rgba(236,72,153,0.95)] focus:outline-none focus:ring-4 focus:ring-pink-300/70 sm:px-12 sm:py-6 sm:text-2xl"
+        aria-label="มีของขวัญมาส่ง คลิกเลย!"
+      >
+        <span class="relative z-10">มีของขวัญมาส่ง คลิกเลย!</span>
+      </button>
+
+      <section id="surpriseSection" class="surprise-section" aria-live="polite">
+        <div class="surprise-inner">
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.45em] text-pink-200/80">
+            Surprise
+          </p>
+          <h1 class="surprise-title">Happy Birthday</h1>
+
+          <p class="surprise-message">
+            เค้าขอส่งคำอวยพรให้คุณด้วยใจที่อบอุ่นและเต็มไปด้วยความรัก
+            ขอให้ทุกวันของคุณเต็มไปด้วยความสุข ความฝันที่กำลังจะเป็นจริง
+            และช่วงเวลาที่น่าจดจำมากมายตลอดไป.
+          </p>
+
+          <div class="masonry-gallery" aria-label="Travel memories gallery">
+            <figure class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Travel memory 1" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Travel memory 2" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80" alt="Travel memory 3" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80" alt="Travel memory 4" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" alt="Travel memory 5" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" alt="Travel memory 6" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
